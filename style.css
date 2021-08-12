@@ -1,0 +1,212 @@
+body {
+    background-color: rgb(138, 100, 86);
+    padding: 0;
+    margin: 0;
+}
+
+.startTitle {
+    font-size: 50px;
+    color: rgb(209, 155, 104);
+    font-family: monospace;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+}
+
+.nameDiv {
+    width: 27%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enterName {
+    color: rgb(238, 202, 147);
+}
+
+.name {
+    width: 255px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.199);
+    color: white;
+    padding-left: 15px;
+    outline: none;
+    font-family: monospace;
+}
+
+.startSub {
+    background-color:rgba(204, 178, 154, 0);
+    color: rgb(238, 202, 147);
+    border: none;
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+    transition: 1s;
+}
+
+.startSub:hover {
+    background-color:rgba(41, 20, 0, 0.616);
+}
+
+.iconDiv {
+    width: 40%;
+    height: 100px;
+    margin: 30px auto 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-icons {
+    color: rgb(224, 185, 158);
+}
+
+.gameDiv {
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    background-color: rgba(126, 72, 34, 0.178);
+    width: 90%;
+    height: 42em;
+    margin: 0px auto 0px auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagDiv {
+    height: 10%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 450px;
+    font-family: monospace;
+    font-size: 20px;
+    color:rgb(255, 219, 185);
+}
+
+.boardDiv {
+    width: 95%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.divider {
+    height: 95%;
+    border-left:rgb(224, 185, 158) 2px solid;
+}
+
+.board {
+    height: 25em;
+    width: 25em;
+    border: 1px solid rgb(226, 202, 158);
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+.square {
+    border: 1px solid rgb(247, 214, 165);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(51, 40, 23);
+    font-size: 30px;
+}
+
+.squarePlayerShip {
+    border: 1px solid rgb(247, 214, 165);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgba(54, 50, 42, 0);
+    font-size: 30px;
+    background-color:rgba(85, 75, 64, 0.788);
+    user-select: none;
+}
+
+.squareHidden {
+    color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(247, 214, 165);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    user-select: none;
+}
+
+.squareMiss {
+    color: rgba(124, 22, 22, 0);
+    border: 1px solid rgb(247, 214, 165);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgba(22, 75, 124, 0.425);
+    user-select: none;
+}
+
+.squareHit {
+    color: rgba(124, 22, 22, 0);
+    border: 1px solid rgb(247, 214, 165);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgba(124, 22, 22, 0.425);
+    user-select:none;
+}
+
+.squareHidden:hover {
+    background-color: rgba(204, 169, 116, 0.692);
+    cursor: pointer;
+}
+
+.winDiv {
+    width: 65%;
+    height: 60%;
+    margin-right: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30%;
+    align-items: center;
+    padding-left: 25px;
+    font-family: monospace;
+    font-size: 30px;
+    color:rgb(255, 219, 185);
+}
+
+.restartButton {
+    width: 30%;
+    height: 40px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    color:rgb(255, 219, 185);
+    background-color:rgba(66, 39, 0, 0.062);
+    transition: 0.5s;
+}
+
+.restartButton:hover {
+    background-color: rgba(66, 39, 0, 0.274);
+}
